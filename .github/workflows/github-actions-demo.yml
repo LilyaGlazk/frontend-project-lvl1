@@ -15,3 +15,9 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+     env:
+          CI: true
+      - name: Run linter
+        # Run Linter
+        run: |
+          make lint
