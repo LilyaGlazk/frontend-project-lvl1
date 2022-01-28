@@ -24,8 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - run: npm run build --if-present
-      - run: npm test
-        env:
+    env:
           CI: true
       - name: Run linter
         # Run Linter
