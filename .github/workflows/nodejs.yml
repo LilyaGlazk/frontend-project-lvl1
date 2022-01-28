@@ -33,6 +33,4 @@ jobs:
         run: |
           make install
         # Add environment variables
-        run: |
-          make lint
-          
+        run: make lint
