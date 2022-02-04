@@ -4,3 +4,4 @@
 [![Node CI](https://github.com/LilyaGlazk/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/LilyaGlazk/frontend-project-lvl1/actions/workflows/nodejs.yml)
 [![asciicast](https://asciinema.org/a/wZOOTf26vucDp09HHXOeROlhG.svg)](https://asciinema.org/a/wZOOTf26vucDp09HHXOeROlhG)
 [![asciicast](https://asciinema.org/a/oBf4nUoBgi5brRptHQ2TKrILf.svg)](https://asciinema.org/a/oBf4nUoBgi5brRptHQ2TKrILf)
+[![asciicast](https://asciinema.org/a/0UBypWNzNJjJzmGo8rSkp7V5O.svg)](https://asciinema.org/a/0UBypWNzNJjJzmGo8rSkp7V5O)
