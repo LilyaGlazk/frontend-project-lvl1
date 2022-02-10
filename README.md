@@ -8,7 +8,7 @@ ____
 **Brain Games** is a set of five console games. Each game asks questions that need to be answered correctly. Wrong answers end the game and offer to play it again.
 
 # **Installation**
- Clone this repository   git@github.com:LilyaGlazk/frontend-project-lvl1.git 
+ Clone this repository   git@github.com:LilyaGlazk/frontend-project-lvl1.git        
  Run the command:   
  $ make install
 ____

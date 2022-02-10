@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import { engine, rounds } from '../index.js';
+import { engine, roundsCount } from '../index.js';
 
 const rulesOfTheGame = 'What number is missing in the progression?';
 
@@ -22,12 +22,12 @@ const generateRound = () => {
   return [task, correctAnswer];
 };
 
-const guessItem = () => {
+const gameProgression = () => {
   const gameRounds = [];
-  for (let i = 0; i < rounds; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     gameRounds.push(generateRound());
   }
   engine(rulesOfTheGame, gameRounds);
 };
 
-export default guessItem;
+export default gameProgression;

@@ -1,21 +1,21 @@
 import randomNumber from '../randomNumber.js';
-import { engine, rounds } from '../index.js';
+import { engine, roundsCount } from '../index.js';
 
 const rulesOfTheGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const generateRound = () => {
+const rounds = () => {
   const task = randomNumber(1, 100);
-  const getCorrectAnswer = (number) => (number % 2 === 0);
-  const correctAnswer = getCorrectAnswer(task) ? 'yes' : 'no';
+  const isEven = (number) => (number % 2 === 0);
+  const correctAnswer = isEven(task) ? 'yes' : 'no';
   return [task, correctAnswer];
 };
 
-const brainEven = () => {
+const gameEven = () => {
   const gameRounds = [];
-  for (let i = 0; i < rounds; i += 1) {
-    gameRounds.push(generateRound());
+  for (let i = 0; i < roundsCount; i += 1) {
+    gameRounds.push(rounds());
   }
   engine(rulesOfTheGame, gameRounds);
 };
 
-export default brainEven;
+export default gameEven;

@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import { engine, rounds } from '../index.js';
+import { engine, roundsCount } from '../index.js';
 
 export const rulesOfTheGame = 'What is the result of the expression?';
 
@@ -27,12 +27,12 @@ const generateRound = () => {
   return [task, correctAnswer];
 };
 
-const game2 = () => {
+const gameCalc = () => {
   const gameRounds = [];
-  for (let i = 0; i < rounds; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     gameRounds.push(generateRound());
   }
   engine(rulesOfTheGame, gameRounds);
 };
 
-export default game2;
+export default gameCalc;
